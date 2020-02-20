@@ -1,0 +1,5 @@
+<root>
+    <item name='javax.annotation.concurrent.NotThreadSafe'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

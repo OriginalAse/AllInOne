@@ -1,0 +1,38 @@
+#Message sent when players use commands that aren't enabled
+DisabledCommandMessage: "Unknown command. Type \"/help\" for help."
+#Message sent when players use commands without permission to
+NoPermCommandMessage: "&cYou don't have permission to execute this command!"
+#Message sent to console when console uses commands that require player action
+ExecutedFromConsoleCommandMessage: "&cStop using player commands from the console!"
+#Fly Command Options
+Fly:
+  #Message sent options for fly command
+  Messages:
+    #Enable and Disable flight message options if no user was specifed when /fly was executed
+    Self:
+      #Message sent when flight is enabled
+      FlightEnable: "&eYou have &aenabled &eflying for yourself!"
+      #Message sent when flight is disabled
+      FlightDisable: "&eYou have &cdisabled &eflying for yourself!"
+    #Enable and Disable flight message options if a user was specifed when /fly was executed
+    Others:
+      #Message sent when flight is enabled
+      FlightEnable: "&eYou have &aenabled &eflying for %player%!"
+      #Message sent when flight is disabled
+      FlightDisable: "&eYou have &cdisabled &eflying for %player%!"
+  #Set to false if you don't want the fly command
+  Enabled: true
+#Repair Command Options
+Repair:
+  Messages:
+    Self:
+      ItemSuccessfullyRepaired:
+      ItemCannotBeRepaired:
+      ItemAlreadyRepaired:
+      NoItemSelected: "&cYou have to hold the item you want to repair in your hand!"
+    Others:
+      ItemSuccessfullyRepaired:
+      ItemCannotBeRepaired:
+      ItemAlreadyRepaired:
+      NoItemSelected: "&cYou have to hold the item you want to repair in your hand!"
+  Enabled: true
